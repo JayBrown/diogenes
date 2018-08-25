@@ -49,5 +49,5 @@ To build morphology and dictionaries using the TLG and PHI corpus:
 >  `make -f mk.tlgdata PHIDIR=/path/to/phi TLGDIR=/path/to/tlg_e`
 
 The morphology data and dictionary files will be built in the
-*dependencies/data/* directory, which will automatically be read
+`dependencies/data/` directory, which will automatically be read
 by `diogenes-server.pl`.
