@@ -1,24 +1,18 @@
-========================================
 # Diogenes
-========================================
 
 Diogenes is a tool for searching, browsing and reading the databases
 of ancient texts, primarily in Latin and Greek, that are published by
 the Thesaurus Linguae Graecae and the Packard Humanities Institute.
 
 
-----------------------------------------
 ## Building
-----------------------------------------
 
 There are a few files that need to be built before Diogenes can be
 run. To do that run this command:
 
 > `make`
 
-----------------------------------------
 ## Running the server
-----------------------------------------
 
 The Diogenes server can be started using the script:
 
@@ -28,9 +22,8 @@ For full usage details run it like this:
 
 >  `diogenes-browser/perl/diogenes-server.pl -?`
 
-----------------------------------------
+
 ## Building the morphology data & dictionaries
-----------------------------------------
 
 Diogenes uses several dictionaries, as well as pre-computed
 morphology tables, which need to be built before use. You can build
