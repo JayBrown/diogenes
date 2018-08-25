@@ -51,3 +51,13 @@ To build morphology and dictionaries using the TLG and PHI corpus:
 The morphology data and dictionary files will be built in the
 `dependencies/data/` directory, which will automatically be read
 by `diogenes-server.pl`.
+
+
+## Credits
+
+Forked from [nickjwhite](https://github.com/nickjwhite/diogenes).
+
+Many thanks also to
+
+- [P. J. Heslin](http://community.dur.ac.uk/p.j.heslin/Software/Diogenes/)
+
