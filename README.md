@@ -13,8 +13,7 @@ meanwhile, you could either clone this repository
 
 > `git clone https://github.com/Doc73/diogenes.git`
 
-or download a zip file containing all the repo from GitHub or  
-by terminal:
+or download a zip file containing all the repo from GitHub or by terminal:
 
 > `wget https://github.com/Doc73/diogenes/archive/master.zip`
 
