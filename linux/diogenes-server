@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if pidof perl | grep [0-9] > /dev/null
+
+then
+	kill -9 `pidof perl`
+
+else
+	perl /mnt/dati/diogenes/diogenes-browser/perl/diogenes-server.pl & 
+#	sleep 2
+#	firefox --new-tab http://127.0.0.1:8888
+fi

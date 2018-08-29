@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Encoding=UTF-8
+Name=Diogenes server
+TryExec=diogenes-server
+Exec=diogenes-server
+Terminal=false
+Type=Application
+StartupNotify=true
+Icon=diogenes
+Categories=Application;Education;Teaching;
+

@@ -5,12 +5,67 @@ of ancient texts, primarily in Latin and Greek, that are published by
 the Thesaurus Linguae Graecae and the Packard Humanities Institute.
 
 
-## Building
+## Installation
+### Download
+
+Maybe one day I'll prepare a script to install all the app. In the 
+meanwhile, you could either clone this repository
+
+> `git clone https://github.com/Doc73/diogenes.git`
+
+or download a zip file containing all the repo from GitHub or  
+by terminal:
+
+> `wget https://github.com/Doc73/diogenes/archive/master.zip`
+
+Unzip this file with your preferred file and archive manager 
+or via terminal:
+
+> `unzip master.zip`
+
+Now, we will find a folder called `diogenes-master`.
+
+
+### Building
 
 There are a few files that need to be built before Diogenes can be
-run. To do that run this command:
+run. 
+
+Before building Diogenes, in Debian and other Debian-based 
+distros (and maybe in other distributions), you should install 
+some required packages:
+
+> `sudo apt install librsvg2-bin build-essential`
+
+Then, run these commands:
+
+> `cd /path/to/diogenes-master`
 
 > `make`
+
+If the terminal returns no errors, go to next step without closing
+terminal.
+
+
+### Installation
+
+In my sample we will install Diogenes in `/opt/`: change the path 
+according your preferences. Run these commands:
+
+> `cd ..`
+
+> `sudo mv diogenes-master /opt/`
+
+Then 
+
+> `mkdir -p ~/bin/`
+
+> `cp /opt/diogenes/linux/diogenes-server ~/home/bin`
+
+> `cp /opt/diogenes/linux/diogenes-server.desktop ~/.local/share/applications/`
+
+Logout and login.
+
 
 ## Running the server
 
@@ -20,7 +75,8 @@ The Diogenes server can be started using the script:
 
 For full usage details run it like this:
 
->  `diogenes-browser/perl/diogenes-server.pl -?`
+> `diogenes-browser/perl/diogenes-server.pl -?`
+
 
 
 ## Building the morphology data & dictionaries
