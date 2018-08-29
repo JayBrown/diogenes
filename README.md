@@ -25,14 +25,13 @@ or via terminal:
 Now, we will find a folder called `diogenes-master`.
 
 
-### Building
+### Building [optional]
 
 There are a few files that need to be built before Diogenes can be
-run. 
+run.
 
-Before building Diogenes, in Debian and other Debian-based 
-distros (and maybe in other distributions), you should install 
-some required packages:
+In Debian and Debian-based distros (and maybe in other distributions), 
+you should install some required packages:
 
 > `sudo apt install librsvg2-bin build-essential`
 
@@ -42,13 +41,13 @@ Then, run these commands:
 
 > `make`
 
-If the terminal returns no errors, go to next step without closing
-terminal.
+If the terminal returns no errors, don't worry and go to next step 
+without closing terminal.
 
 
 ### Installation
 
-In my sample we will install Diogenes in `/opt/`: change the path 
+In this sample we will install Diogenes in `/opt/`: change the path 
 according your preferences. Run these commands:
 
 > `cd ..`
@@ -75,7 +74,6 @@ The Diogenes server can be started using the script:
 For full usage details run it like this:
 
 > `diogenes-browser/perl/diogenes-server.pl -?`
-
 
 
 ## Building the morphology data & dictionaries

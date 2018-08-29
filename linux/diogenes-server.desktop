@@ -7,6 +7,6 @@ Exec=diogenes-server
 Terminal=false
 Type=Application
 StartupNotify=true
-Icon=diogenes
+Icon=/mnt/dati/diogenes/icons/256.png
 Categories=Application;Education;Teaching;
 
