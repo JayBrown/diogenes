@@ -2,6 +2,7 @@
 
 ## Unreleased
  * `README.md`: added info for compilation and installation
+ * Added `diogenes-server` and `diogenes-server.desktop`
 
 ## 0.0.1 (2018-08-25)
  * Initial release
