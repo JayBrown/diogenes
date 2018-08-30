@@ -25,24 +25,22 @@ or via terminal:
 Now, we will find a folder called `diogenes-master`.
 
 
-### Building [optional]
+### Building
 
-There are a few files that need to be built before Diogenes can be
-run.
+There are a few files that need to be built before Diogenes can be run.
 
-In Debian and Debian-based distros (and maybe in other distributions), 
-you should install some required packages:
+In Debian and Debian-based distros (and maybe in other distributions), install some required packages:
 
 > `sudo apt install librsvg2-bin build-essential`
 
-Then, run these commands:
+Then, run these commands (adapt the first one):
 
 > `cd /path/to/diogenes-master`
 
 > `make`
 
-If the terminal returns no errors, don't worry and go to next step 
-without closing terminal.
+If the terminal returns no errors, go to next step 
+without closing terminal. Otherwise, open a bug report here!
 
 
 ### Installation
