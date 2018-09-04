@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
  * `linux/diogenes-server.desktop`
 
 ### Changed
+ * `dist/nwjs/diogenes-startup.js`: merged patch [7fa9f34](https://github.com/pjheslin/diogenes/commit/f9b137648cfe9b30dc05ad245c9c24b28983f25b) by P. J. Heslin
  * `README.md`: added info for compilation and installation
 
 ## 0.0.1 (2018-08-25)
