@@ -1,8 +1,16 @@
-# CHANGES
+# Change Log
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](http://keepachangelog.com/) 
+and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
+### Added
+ * `linux/diogenes-server`
+ * `linux/diogenes-server.desktop`
+
+### Changed
  * `README.md`: added info for compilation and installation
- * Added `diogenes-server` and `diogenes-server.desktop`
 
 ## 0.0.1 (2018-08-25)
  * Initial release
