@@ -1,5 +1,14 @@
 # Rules to make wordlists from the TLG and PHI datasets.
 
+UNAME=$(uname -s)
+case "${UNAME}" in
+	Linux*)     SYSTEM=Linux;;
+	Darwin*)    SYSTEM=Mac;;
+	CYGWIN*)    SYSTEM=Cygwin;;
+	MINGW*)     SYSTEM=MinGW;;
+	*)          SYSTEM="${UNAME}"
+esac
+
 PHIDIR = $(HOME)/phi
 TLGDIR = $(HOME)/tlg_e
 
@@ -7,10 +16,18 @@ include mk.commondata
 
 $(BUILD)/lat.words: utils/make_latin_wordlist.pl
 	mkdir -p $(BUILD) $(DATA)
-	find $(PHIDIR) -type f -exec sha256sum '{}' ';' | sed 's:  $(PHIDIR):  :g' > $(DATA)/phisums
+	if [[ $SYSTEM == Mac ]] ; then
+		find $(PHIDIR) -type f -exec shasum -a 256 '{}' ';' | sed 's:  $(PHIDIR):  :g' > $(DATA)/phisums
+	else
+		find $(PHIDIR) -type f -exec sha256sum '{}' ';' | sed 's:  $(PHIDIR):  :g' > $(DATA)/phisums
+	fi
 	./utils/make_latin_wordlist.pl $(PHIDIR) > $@
 
 $(BUILD)/grc.words: utils/make_greek_wordlist.pl
 	mkdir -p $(BUILD) $(DATA)
-	find $(TLGDIR) -type f -exec sha256sum '{}' ';' | sed 's:  $(TLGDIR):  :g' > $(DATA)/tlgsums
+	if [[ $SYSTEM == Mac ]] ; then
+		find $(TLGDIR) -type f -exec shasum -a 256 '{}' ';' | sed 's:  $(TLGDIR):  :g' > $(DATA)/tlgsums
+	else
+		find $(TLGDIR) -type f -exec sha256sum '{}' ';' | sed 's:  $(TLGDIR):  :g' > $(DATA)/tlgsums
+	fi
 	./utils/make_greek_wordlist.pl $(TLGDIR) > $@
